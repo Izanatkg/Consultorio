@@ -17,6 +17,7 @@ import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { es } from 'date-fns/locale';
+import api from '../../config/api';
 
 interface Patient {
   _id: string;
@@ -54,15 +55,12 @@ const AppointmentForm: React.FC = () => {
 
   const fetchPatients = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/patients', {
+      const response = await api.get('/patients', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
       });
-      if (response.ok) {
-        const data = await response.json();
-        setPatients(data);
-      }
+      setPatients(response.data);
     } catch (error) {
       console.error('Error al obtener pacientes:', error);
       setError('Error al cargar la lista de pacientes');
@@ -71,21 +69,19 @@ const AppointmentForm: React.FC = () => {
 
   const fetchAppointment = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/appointments/${id}`, {
+      const response = await api.get(`/appointments/${id}`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
       });
-      if (response.ok) {
-        const data = await response.json();
-        setFormData({
-          patientId: data.patient._id,
-          date: new Date(data.date),
-          time: data.time,
-          reason: data.reason,
-          notes: data.notes || ''
-        });
-      }
+      const data = response.data;
+      setFormData({
+        patientId: data.patient._id,
+        date: new Date(data.date),
+        time: data.time,
+        reason: data.reason,
+        notes: data.notes || ''
+      });
     } catch (error) {
       console.error('Error al obtener cita:', error);
       setError('Error al cargar los datos de la cita');
@@ -103,29 +99,30 @@ const AppointmentForm: React.FC = () => {
 
     try {
       const url = id 
-        ? `http://localhost:5000/api/appointments/${id}`
-        : 'http://localhost:5000/api/appointments';
+        ? `/appointments/${id}`
+        : '/appointments';
       
       const method = id ? 'PUT' : 'POST';
       
       console.log('Enviando datos:', formData);
-      const response = await fetch(url, {
+      const response = await api({
         method,
+        url,
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${token}`
         },
-        body: JSON.stringify(formData)
+        data: formData
       });
 
-      const data = await response.json();
+      const data = response.data;
       
-      if (!response.ok) {
+      if (response.status !== 200 && response.status !== 201) {
         throw new Error(data.message || 'Error al guardar la cita');
       }
 
       navigate('/appointments');
-    } catch (error) {
+    } catch (error: any) {
       console.error('Error:', error);
       setError(error instanceof Error ? error.message : 'Error al guardar la cita');
     }

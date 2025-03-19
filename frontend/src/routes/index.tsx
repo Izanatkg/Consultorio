@@ -6,6 +6,7 @@ import Dashboard from '../pages/dashboard/Dashboard';
 import Patients from '../pages/patients/Patients';
 import PatientForm from '../pages/patients/PatientForm';
 import Appointments from '../pages/appointments/Appointments';
+import AppointmentForm from '../pages/appointments/AppointmentForm';
 import { useSelector } from 'react-redux';
 import { RootState } from '../store';
 
@@ -29,6 +30,8 @@ const AppRoutes: React.FC = () => {
         <Route path="patients/new" element={<PatientForm />} />
         <Route path="patients/edit/:id" element={<PatientForm />} />
         <Route path="appointments" element={<Appointments />} />
+        <Route path="appointments/new" element={<AppointmentForm />} />
+        <Route path="appointments/edit/:id" element={<AppointmentForm />} />
       </Route>
       <Route path="/login" element={<Navigate to="/" replace />} />
       <Route path="*" element={<Navigate to="/" replace />} />
