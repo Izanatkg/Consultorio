@@ -1,0 +1,44 @@
+[{
+  "_id": {
+    "$oid": "67db10cf79a754a063450d08"
+  },
+  "patient": {
+    "$oid": "67da03b2a4c5d9f7f1a737b8"
+  },
+  "date": {
+    "$date": "2025-03-27T06:00:00.000Z"
+  },
+  "time": "15:15",
+  "reason": "revicion",
+  "status": "Programada",
+  "notes": "",
+  "createdAt": {
+    "$date": "2025-03-19T18:45:35.770Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-19T18:45:35.770Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67db137c385f4b885c047d58"
+  },
+  "patient": {
+    "$oid": "67da03b2a4c5d9f7f1a737c4"
+  },
+  "date": {
+    "$date": "2025-03-19T06:00:00.000Z"
+  },
+  "time": "15:20",
+  "reason": "REVISION",
+  "status": "Programada",
+  "notes": "",
+  "createdAt": {
+    "$date": "2025-03-19T18:57:00.329Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-19T18:57:00.329Z"
+  },
+  "__v": 0
+}]

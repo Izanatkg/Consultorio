@@ -1,0 +1,205 @@
+[{
+  "_id": {
+    "$oid": "67da03b2a4c5d9f7f1a737b8"
+  },
+  "nombre": "María",
+  "apellido": "González",
+  "email": "maria.gonzalez@email.com",
+  "telefono": "555-0101",
+  "fechaNacimiento": {
+    "$date": "1990-05-15T00:00:00.000Z"
+  },
+  "genero": "femenino",
+  "direccion": {
+    "calle": "Av. Principal 123",
+    "ciudad": "Ciudad de México",
+    "estado": "CDMX",
+    "codigoPostal": "01000"
+  },
+  "grupoSanguineo": "O+",
+  "alergias": [
+    "penicilina",
+    "látex"
+  ],
+  "antecedentes": "Hipertensión familiar",
+  "createdBy": {
+    "$oid": "67da013bf5b4fb46f7c4c810"
+  },
+  "createdAt": {
+    "$date": "2025-03-18T23:37:22.893Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-19T18:54:10.394Z"
+  },
+  "__v": 0,
+  "gender": "F",
+  "lastVisit": {
+    "$date": "2025-03-19T18:27:59.900Z"
+  },
+  "name": "maria",
+  "phone": "3113425096",
+  "age": 50
+},
+{
+  "_id": {
+    "$oid": "67da03b2a4c5d9f7f1a737bb"
+  },
+  "nombre": "Juan",
+  "apellido": "Pérez",
+  "email": "juan.perez@email.com",
+  "telefono": "555-0102",
+  "fechaNacimiento": {
+    "$date": "1985-08-22T00:00:00.000Z"
+  },
+  "genero": "masculino",
+  "direccion": {
+    "calle": "Calle 45 #890",
+    "ciudad": "Guadalajara",
+    "estado": "Jalisco",
+    "codigoPostal": "44100"
+  },
+  "grupoSanguineo": "A+",
+  "alergias": [
+    "aspirina"
+  ],
+  "antecedentes": "Diabetes tipo 2",
+  "createdBy": {
+    "$oid": "67da013bf5b4fb46f7c4c810"
+  },
+  "createdAt": {
+    "$date": "2025-03-18T23:37:22.899Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-19T18:54:37.285Z"
+  },
+  "__v": 0,
+  "age": 46,
+  "gender": "M",
+  "lastVisit": {
+    "$date": "2025-03-19T18:54:12.760Z"
+  },
+  "name": "JUAN ",
+  "phone": "5550987190"
+},
+{
+  "_id": {
+    "$oid": "67da03b2a4c5d9f7f1a737be"
+  },
+  "nombre": "Ana",
+  "apellido": "Martínez",
+  "email": "ana.martinez@email.com",
+  "telefono": "555-0103",
+  "fechaNacimiento": {
+    "$date": "1995-12-03T00:00:00.000Z"
+  },
+  "genero": "femenino",
+  "direccion": {
+    "calle": "Reforma 67",
+    "ciudad": "Monterrey",
+    "estado": "Nuevo León",
+    "codigoPostal": "64000"
+  },
+  "grupoSanguineo": "B-",
+  "alergias": [],
+  "antecedentes": "Ninguno",
+  "createdBy": {
+    "$oid": "67da013bf5b4fb46f7c4c810"
+  },
+  "createdAt": {
+    "$date": "2025-03-18T23:37:22.901Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-19T18:55:00.678Z"
+  },
+  "__v": 0,
+  "age": 49,
+  "gender": "F",
+  "lastVisit": {
+    "$date": "2025-03-19T18:54:40.559Z"
+  },
+  "name": "ANA",
+  "phone": "55509871890"
+},
+{
+  "_id": {
+    "$oid": "67da03b2a4c5d9f7f1a737c1"
+  },
+  "nombre": "Carlos",
+  "apellido": "Rodríguez",
+  "email": "carlos.rodriguez@email.com",
+  "telefono": "555-0104",
+  "fechaNacimiento": {
+    "$date": "1978-03-28T00:00:00.000Z"
+  },
+  "genero": "masculino",
+  "direccion": {
+    "calle": "Insurgentes Sur 789",
+    "ciudad": "Ciudad de México",
+    "estado": "CDMX",
+    "codigoPostal": "03100"
+  },
+  "grupoSanguineo": "AB+",
+  "alergias": [
+    "mariscos",
+    "nueces"
+  ],
+  "antecedentes": "Asma desde la infancia",
+  "createdBy": {
+    "$oid": "67da013bf5b4fb46f7c4c810"
+  },
+  "createdAt": {
+    "$date": "2025-03-18T23:37:22.904Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-19T18:56:00.683Z"
+  },
+  "__v": 0,
+  "age": 34,
+  "gender": "M",
+  "lastVisit": {
+    "$date": "2025-03-19T18:55:44.919Z"
+  },
+  "name": "CARLOS",
+  "phone": "555098718456"
+},
+{
+  "_id": {
+    "$oid": "67da03b2a4c5d9f7f1a737c4"
+  },
+  "nombre": "Laura",
+  "apellido": "Sánchez",
+  "email": "laura.sanchez@email.com",
+  "telefono": "555-0105",
+  "fechaNacimiento": {
+    "$date": "1992-07-14T00:00:00.000Z"
+  },
+  "genero": "otro",
+  "direccion": {
+    "calle": "Juárez 234",
+    "ciudad": "Puebla",
+    "estado": "Puebla",
+    "codigoPostal": "72000"
+  },
+  "grupoSanguineo": "O-",
+  "alergias": [
+    "polen"
+  ],
+  "antecedentes": "Migraña crónica",
+  "createdBy": {
+    "$oid": "67da013bf5b4fb46f7c4c810"
+  },
+  "createdAt": {
+    "$date": "2025-03-18T23:37:22.905Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-19T18:56:14.356Z"
+  },
+  "__v": 0,
+  "age": 29,
+  "gender": "F",
+  "lastVisit": {
+    "$date": "2025-03-19T18:56:03.395Z"
+  },
+  "name": "LAURA",
+  "phone": "12345678910"
+}]

@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "67da013bf5b4fb46f7c4c810"
+  },
+  "nombre": "Administrador",
+  "email": "admin@consultorio.com",
+  "password": "$2b$10$QpWWtgvieYt7QzmkiUE.8OFhQpkUQSCJiVY8gJkFgN1byTPxKk2UW",
+  "rol": "admin",
+  "createdAt": {
+    "$date": "2025-03-18T23:26:51.416Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-18T23:26:51.416Z"
+  },
+  "__v": 0
+}]
