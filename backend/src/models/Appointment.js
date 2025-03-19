@@ -29,3 +29,7 @@ const appointmentSchema = new mongoose.Schema({
 }, {
     timestamps: true
 });
+
+// Exportar el modelo
+const Appointment = mongoose.model('Appointment', appointmentSchema);
+module.exports = Appointment;
